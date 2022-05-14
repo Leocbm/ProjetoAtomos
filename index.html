@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d8ab39ac74.js" crossorigin="anonymous"></script>
+    <title>Leonardo Cunha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <!-- imagem representativa -->
+            <img src="img/l.jpg" alt="Logo Leo" width="15%">
+        </div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/Leocbm">github</a> </li>
+            <li><a target="_blank" href="mailto:leonardoleo.barbosa2@gmail.com">email</a></li>
+            <li><a target="_blank" href="https://wa.me/61998068480">whatsapp</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Leonardo Cunha</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div id="arrow">
+                <i onclick="displayAbout()" id="animation" class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div style="display: none;" id="sobre">
+                <p>Meu nome é leonardo, tenho 21 anos e tenho experiência na área de vendas e tecnologia.
+                     Atuei no curso de ciência da computação e isso me fez ficar mais próximo de assuntos e informações ligados a redes
+                     , internet e programação. No meu tempo livre, estudei os conceitos de JavaScript, Python, Html e Css, e pretendo levar
+                    isso para minha carreira e vida profissional. </p>
+            </div>
+            <div class="form">
+                <div><p>deixe seu contato!</p></div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('sobre');
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

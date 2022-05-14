@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+    font-style: italic;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url(./img/pexels-cut.jpg) no-repeat center center fixed;
+    background-size: cover; 
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid white ;
+    margin-bottom: 50px;
+    border-color: #a09038;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    padding: 5px;
+}
+header ul li a{
+    transition: 300ms;
+}
+header ul li a:hover{
+    color: #c0a717;
+    text-decoration: underline;
+}
+.container{
+    text-align: center;
+}
+.container .nome h1{
+    font-size: 60px;
+}
+.container .nome h5{
+    font-size: 25px;
+}
+#arrow{
+    font-size: 35px;
+    animation: blink 1s steps(5, start) infinite;
+}
+#arrow i {
+    cursor: pointer;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+#animation{
+    transition: 300ms;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms
+}
+.active{
+    display: block !important;
+}
+#sobre p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c0a717 50%, #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #FFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.form button:hover{
+    background-position: left bottom;
+}
+@media only screen and (max-width: 480px) {
+    .form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container .nome h1 {
+        font-size: 30px;
+    }
+
+    .container .nome h5 {
+        font-size: 15px;
+    }
+
+    #sobre p {
+        max-width: 80%;
+    }
+
+    #arrow i {
+        font-size: 25px;
+        text-align: justify;
+    }
+}
+/* box-sizing: border-box - faz com q o conteudo dentro do box se contente dentro da sua box, 
+qnd tiver width e hight, a soma deles seja apenas eles */
+/* back-url - cobrir toda a tela, fixado e sem repetir */
